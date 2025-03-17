@@ -1,3 +1,5 @@
+# Demonstrates a dictionary used as a 
+# substitute for sparsely-populated list
 phone_book=dict()
 phone_book["0400001111"]="John"
 phone_book["0401891310"]="Masha"
