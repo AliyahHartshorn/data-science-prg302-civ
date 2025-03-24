@@ -3,22 +3,30 @@ class Student:
     _age=""
     _id=""
 
+    def __init__(self,id,name,age):
+        self._id=id
+        self._name=name
+        self._age=age
+
     @property
-    def getName(self):
+    def get_name(self):
         return self._name
-    def setName(self,newName):
+    @name.setter
+    def set_name(self,newName):
         self._name=newName
 
     @property
-    def getAge(self):
+    def get_age(self):
         return self._age
-    def setAge(self,newAge):
+    @age.setter
+    def set_age(self,newAge):
         self._age=newAge
 
     @property
-    def getID(self):
+    def get_id(self):
         return self._id
-    def setID(self,newID):
+    @id.setter
+    def set_id(self,newID):
         self._id=newID
 
     def __hash__(self):
@@ -30,7 +38,9 @@ class Student:
             return value==self
 
 
-student=Student()
-student.setID("1234")
-student.setName("Alan Bond")
-student.setAge(90)
+student=Student("1234","Alan Bond",80)
+student2=Student("1235","Andrew Forrest",79)
+student3=Student("1236","Moondyne Joe",200)
+student4=Student("1237","AO Neville",150)
+
+print(student3.age)
