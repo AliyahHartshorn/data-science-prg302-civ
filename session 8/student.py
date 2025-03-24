@@ -8,26 +8,23 @@ class Student:
         self._name=name
         self._age=age
 
-    @property
     def get_name(self):
         return self._name
-    @name.setter
     def set_name(self,newName):
         self._name=newName
+    name=property(fget=get_name,fset=set_name)
 
-    @property
     def get_age(self):
         return self._age
-    @age.setter
     def set_age(self,newAge):
         self._age=newAge
+    age=property(fget=get_age,fset=set_age)
 
-    @property
     def get_id(self):
         return self._id
-    @id.setter
     def set_id(self,newID):
         self._id=newID
+    id=property(fget=get_id,fset=set_id)
 
     def __hash__(self):
         return hash(self._id)
@@ -43,4 +40,7 @@ student2=Student("1235","Andrew Forrest",79)
 student3=Student("1236","Moondyne Joe",200)
 student4=Student("1237","AO Neville",150)
 
+print(student3.id)
+print(student3.name)
+student3.age=300
 print(student3.age)
