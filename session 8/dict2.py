@@ -3,3 +3,6 @@ student["unit"]=["Python"]
 print(student)
 student["unit"].append("IOT")
 print(student)
+
+del student["unit"]
+print(student)
