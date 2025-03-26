@@ -10,8 +10,8 @@ while True:
         names[name]=1
 print(names)
 
-names2={"one":1,2:"two",3:"three"}
-for key in names2.keys():
-    print(key)
-val2=names2.get(1)
-print(val2)
+names2={"banana":1,"orange":1,"loquat":1}
+fruit=names2.get("strawberry",-1)
+print(fruit)
+fruit=names2.get("orange",-1)
+print(fruit)
