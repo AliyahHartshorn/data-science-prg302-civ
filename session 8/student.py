@@ -23,7 +23,8 @@ class Student:
     def get_id(self):
         return self._id
     def set_id(self,newID):
-        self._id=newID
+        pass
+        # self._id=newID
     id=property(fget=get_id,fset=set_id)
 
     def get_first_name(self):
@@ -51,7 +52,8 @@ student4=Student("1237","AO Neville",150)
 # print(student3.switch_name())
 # print(student3.name)
 
-student5=Student("1238","Rinehart Gina",70).switch_name()
+student5=Student("1238","Rinehart Gina",70)
+student5.switch_name()
 print(student5.name)
 
 # print(student2.id)
