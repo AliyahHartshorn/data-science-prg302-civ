@@ -10,7 +10,7 @@ def modulo(x,y):
     return x%y
 
 def do_nothing(x,y):
-    print("Unrecognised function.")
+    print("Unrecognised operation.")
     return None
 
 functions={"+":add,"-":subtract,"*":multiply,"/":divide,"%":modulo}
