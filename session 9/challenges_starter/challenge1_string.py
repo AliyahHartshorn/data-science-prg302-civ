@@ -1,4 +1,8 @@
-# Open the file in read mode
+# Open the file in write mode\
+path="session 9\\challenges_starter\\numerics2.txt"
+with open(path,"a") as file:
+    lines=map(lambda x:str(x)+"\n",range(0,10))
+    file.writelines(lines)
 
 # Find the positions of the substring
 
