@@ -60,6 +60,7 @@ class VariableJsonList(JsonFileWordList):
         return json_obj["words"]
         
     def has_word(self,word):
+        raise Exception("oh noes it's all broken")
         if len(word)==5:
             return super().has_word(word)
         
